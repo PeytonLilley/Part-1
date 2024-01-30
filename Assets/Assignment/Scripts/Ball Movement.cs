@@ -13,14 +13,18 @@ public class BallMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         transform.Translate(ballSpeedX * Time.deltaTime, ballSpeedY * Time.deltaTime, 0);
     }
+
+
 
     void OnCollisionEnter2D()
     {
